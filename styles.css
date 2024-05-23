@@ -1,0 +1,144 @@
+:root{
+    --kelly-green: #2bc016;
+    --van-dyke: #463730;
+    --carolina-blue: #6EB4D1;
+    --raw-umber: #826251;
+    --hunter-green: #3f6c51;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.nav{
+    width:100;
+    height:8vmin;
+    background: linear-gradient(to right, var(--kelly-green), var(--hunter-green));
+    font-size:2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size:4vmin;
+    margin-left: 2vmin;
+}
+
+.logo{
+    width:4vmin;
+    height:4vmin;
+    margin-left:1vmin;
+}
+.credits:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.container{
+    width:100%;
+    height:fit-content;
+    min-height:92vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-input{
+    width:69vmin;
+    height:6vmin;
+    font-size:3vmin;
+    padding:0.5vmin;
+    border-radius:0.5vmin;
+}
+
+/* .input-container{
+    width:80vmin;
+    height:6vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:3vmin;
+} */
+
+
+.streak{
+    margin-bottom:3vmin;
+    font-size:3vmin;
+}
+
+/* .image-divider{
+    width: 80vmin;
+    height:60vmin;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border:solid black 1px;
+    border-radius: 1vmin;
+} */
+
+.left-image-box, .right-image-box{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit{
+    width:8vmin;
+    height:7vmin;
+    border:solid rgb(111, 111, 111) 2px;
+}
+
+.left-image, .right-image{
+    width:50vmin;
+    height:50vmin;
+    border:solid #463730 1px;
+}
+
+.streak-container{
+
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top:8ch;
+    width:110vmin;
+}
+
+.next, .start{
+    width:12vmin;
+    height:6vmin;
+    background-color: var(--carolina-blue);
+    color: var(--van-dyke);
+    font-size:3vmin;
+    border:none;
+}
+
+.next:hover, .start:hover{
+    cursor: pointer;
+    scale:1.05;
+    filter: brightness(80%);
+}
+
+.start{
+    margin-top:5vmin
+}
+
+.left-image:hover, .right-image:hover{
+    box-shadow: rgba(14, 30, 17, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.loading{
+    width:50vmin;
+    height:50vmin;
+    border:none;
+}
